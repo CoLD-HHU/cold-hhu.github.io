@@ -7,6 +7,13 @@
 .research-news-list h3 { margin: 0 0 4px; font-size: 17px; line-height: 1.5; font-weight: 600; }
 .news-teaser { margin: 0 0 4px; font-size: 14px; line-height: 1.75; }
 .news-byline { margin: 0; font-size: 12px; }
+.news-more { margin: 0 0 16px; }
+.news-more summary { width: fit-content; padding: 3px 0; color: var(--link); font-size: 14px; cursor: pointer; }
+.news-more summary:hover { color: var(--heading); }
+.news-more summary:focus-visible { outline: 2px solid var(--heading); outline-offset: 3px; }
+.news-more .research-news-list { margin-top: 8px; }
+.news-collapse-label, .news-more[open] .news-expand-label { display: none; }
+.news-more[open] .news-collapse-label { display: inline; }
 .news-note { line-height: 1.7; font-size: 12px; }
 .research-article { max-width: 1050px; }
 .research-article h1 { font-size: 24px; line-height: 1.55; }
