@@ -236,3 +236,14 @@ p.subtle { margin: 4px 0 8px; }
   .publication-list { padding-left: 18px; font-size: 15px; }
   .publication-list li { margin-bottom: 19px; }
 }
+
+/* Recruitment: compact academic layout, with a scrollable contact table on phones. */
+.recruit-notice { padding: 12px 16px; border-left: 3px solid var(--accent); background: #f1f8fc; color: #245779; }
+.recruit-table-wrap { max-width: 100%; overflow-x: auto; margin: 12px 0; }
+.recruit-table { width: 100%; min-width: 690px; border-collapse: collapse; text-align: left; font-size: 14px; }
+.recruit-table th, .recruit-table td { padding: 9px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.recruit-table thead th { background: #f1f8fc; color: #245779; }
+.recruit-table tbody th { white-space: nowrap; font-weight: normal; }
+.recruit-table td:last-child { white-space: nowrap; }
+.recruit-list { padding-left: 1.6em; margin: 0 0 16px; }
+.recruit-list li { margin-bottom: 8px; }

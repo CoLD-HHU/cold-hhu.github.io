@@ -33,10 +33,53 @@
     <main id="main-content" class="main-content">
       <div class="search-results" id="search-results" hidden><h2>查找结果 <button type="button" class="close-search">关闭</button></h2><p class="search-status" role="status"></p><ul class="search-result-list"></ul></div>
 <nav class="breadcrumb" aria-label="当前位置"><a href="main.htm">主页</a> » <span aria-current="page">招生信息</span></nav>
-      <h1>招生信息</h1>
-      <section id="enrollment"><h2>招生信息待补充</h2>
-        <p>具体招生安排和申请要求将在此更新。</p>
-        <p>如需咨询，请前往<a href="people.htm">成员页面</a>查看教师介绍和联系方式。</p>
+      <h1>CoLD 研究生招生说明</h1>
+      <p class="english-name">Computing and Learning in Distributed Systems · 河海大学</p>
+      <p class="recruit-notice"><strong>CoLD 不组织统一招生面试。请根据研究兴趣，直接通过邮件联系希望报考的导师，咨询招生计划与后续交流安排。</strong></p>
+      <nav class="section-index member-index" aria-label="招生信息导航"><span>[<a href="#about-recruitment">研究方向</a>]</span> <span>[<a href="#supervisors">导师与联系方式</a>]</span> <span>[<a href="#materials">联系导师前的准备</a>]</span> <span>[<a href="#apply">如何申请</a>]</span> <span>[<a href="#notes">注意事项</a>]</span></nav>
+      <section id="about-recruitment"><h2>欢迎加入 CoLD</h2>
+        <p>河海大学计算机与软件学院分布式计算与系统研究所（CoLD）关注计算与学习的结合，围绕分布式计算、边缘计算和机器学习开展研究。欢迎对这些问题感兴趣、愿意深入探索的同学联系报考。</p>
+        <p>研究主题包括云边端协同计算、边缘智能、联邦学习、集成学习、复杂优化、智能感知与图像视频处理等。您可以先阅读导师介绍和团队的<a href="publications.htm">近期论著</a>，了解具体问题与研究方法，再选择与自己兴趣契合的导师。</p>
+      </section>
+      <section id="supervisors"><h2>导师与联系方式</h2>
+        <p>以下为研究所教师的研究方向及公开邮箱，按姓氏拼音排序。各导师当年的招生资格、招生类别和名额，请直接向导师咨询，并以学校公布的招生目录为准。</p>
+        <div class="recruit-table-wrap" role="region" aria-label="导师联系方式表，可横向滚动" tabindex="0"><table class="recruit-table"><thead><tr><th scope="col">导师</th><th scope="col">职称与指导资格</th><th scope="col">研究方向</th><th scope="col">联系邮箱</th></tr></thead><tbody>
+          <tr><th scope="row"><a href="people.htm#chen-siguang">陈思光</a></th><td>博士，教授，博士生导师</td><td>人工智能与边缘计算、联邦学习、人工智能隐私与安全</td><td><a href="mailto:sgchen@hhu.edu.cn">sgchen@hhu.edu.cn</a></td></tr>
+          <tr><th scope="row"><a href="people.htm#hu-shihong">胡世红</a></th><td>博士，副教授，硕士生导师</td><td>边缘计算、边缘智能、无服务器计算、车联网</td><td><a href="mailto:shihonghu@hhu.edu.cn">shihonghu@hhu.edu.cn</a></td></tr>
+          <tr><th scope="row"><a href="people.htm#ji-mingtao">吉明涛</a></th><td>博士，讲师，硕士生导师</td><td>边缘智能、联邦学习、边缘推理、算力网络、带内计算</td><td><a href="mailto:jmt@hhu.edu.cn">jmt@hhu.edu.cn</a></td></tr>
+          <tr><th scope="row"><a href="people.htm#jiang-xutong">蒋旭桐</a></th><td>博士，讲师，硕士生导师</td><td>边缘计算、云边端协同计算、边缘数据访问控制</td><td><a href="mailto:xtjiang@hhu.edu.cn">xtjiang@hhu.edu.cn</a></td></tr>
+          <tr><th scope="row"><a href="people.htm#lyu-shenhuan">吕沈欢</a></th><td>博士，副教授，硕士生导师</td><td>人工智能、机器学习、复杂优化</td><td><a href="mailto:lvsh@hhu.edu.cn">lvsh@hhu.edu.cn</a></td></tr>
+          <tr><th scope="row"><a href="people.htm#mao-yingchi">毛莺池</a></th><td>博士，教授，博士生导师</td><td>边缘智能系统、联邦学习、大模型与知识图谱推理</td><td><a href="mailto:yingchimao@hhu.edu.cn">yingchimao@hhu.edu.cn</a></td></tr>
+          <tr><th scope="row"><a href="people.htm#qu-zhihao">屈志昊</a></th><td>博士，副教授，硕士生导师</td><td>边缘学习、边缘智能、联邦学习</td><td><a href="mailto:quzhihao@hhu.edu.cn">quzhihao@hhu.edu.cn</a></td></tr>
+          <tr><th scope="row"><a href="people.htm#tang-bin">唐斌</a></th><td>博士，教授，博士生导师</td><td>分布式计算、边缘智能</td><td><a href="mailto:cstb@hhu.edu.cn">cstb@hhu.edu.cn</a></td></tr>
+          <tr><th scope="row"><a href="people.htm#wang-yanyan">王严严</a></th><td>博士，副教授，硕士生导师</td><td>基于 RFID 的无源感知、智能感知、AI + IoT</td><td><a href="mailto:yanyan.wang@hhu.edu.cn">yanyan.wang@hhu.edu.cn</a></td></tr>
+          <tr><th scope="row"><a href="people.htm#xie-zaipeng">谢在鹏</a></th><td>博士，副教授，硕士生导师</td><td>嵌入式计算系统、分布式计算系统、多智能体强化学习</td><td><a href="mailto:zaipengxie@hhu.edu.cn">zaipengxie@hhu.edu.cn</a></td></tr>
+          <tr><th scope="row"><a href="people.htm#xu-yuanyuan">徐媛媛</a></th><td>博士，副教授，硕士生导师</td><td>图像与视频编码、图像与视频通信、沉浸式视频、视觉感知及应用</td><td><a href="mailto:yuanyuan_xu@hhu.edu.cn">yuanyuan_xu@hhu.edu.cn</a></td></tr>
+        </tbody></table></div>
+        <p class="subtle">点击姓名可查看成员页中的详细介绍与个人主页。</p>
+      </section>
+      <section id="materials"><h2>联系导师前的准备</h2>
+        <p>为便于导师了解您的背景，首次联系时建议提供以下信息；这些是沟通建议，具体材料要求由拟报考导师说明。</p>
+        <ul class="recruit-list">
+          <li><strong>个人简历：</strong>介绍所在学校、专业、学习经历、预计毕业时间，以及希望申请的入学年份和学位类别。</li>
+          <li><strong>学习情况：</strong>提供已有的课程成绩单；申请博士的同学可同时介绍硕士阶段的研究课题。</li>
+          <li><strong>研究兴趣：</strong>简要说明想研究的问题、为什么选择这位导师，以及希望在研究生阶段进一步学习的内容。</li>
+          <li><strong>相关经历（如有）：</strong>可以附上课程项目、毕业设计、代码仓库、竞赛或论文等材料，并说明自己实际承担的工作。</li>
+        </ul>
+        <p>建议将文档整理为清晰易读的 PDF，并用“姓名－材料名称”命名。已有论文或项目经历可以帮助展示您的基础；也欢迎尚未开展科研、但有明确兴趣的同学介绍自己的学习与实践经历。</p>
+      </section>
+      <section id="apply"><h2>如何申请</h2>
+        <ol class="recruit-list">
+          <li><strong>了解导师。</strong>结合自己的兴趣和基础，阅读导师主页与相关论文，确定希望联系的导师。</li>
+          <li><strong>直接发送邮件。</strong>使用上表邮箱联系导师，正文简要说明申请意向并附上材料。邮件主题建议为“研究生报考咨询－入学年份－姓名－学校－硕士/博士”。</li>
+          <li><strong>与导师沟通。</strong>招生意向、研究方向及进一步交流的时间和形式，由您与导师直接商定，无需等待研究所统一面试通知。</li>
+          <li><strong>完成正式报考。</strong>按河海大学及学院当年的通知，完成相应的报名、资格审核、考试或复试等环节。</li>
+        </ol>
+      </section>
+      <section id="notes"><h2>注意事项</h2>
+        <p><strong>联系导师不替代学校的正式招生程序，也不代表获得录取资格。</strong>研究所不组织统一面试，是指团队层面的招生沟通安排；学校和学院规定的考核、复试等要求仍须按通知执行。</p>
+        <p>请关注<a href="https://gs.hhu.edu.cn/">河海大学研究生院</a>与<a href="https://cies.hhu.edu.cn/">计算机与软件学院</a>发布的最新招生信息。报考条件、专业目录、招生计划和时间安排均以当年官方通知为准。</p>
+        <p>如申请意向发生变化，请及时告知已联系的导师。发送邮件前请核对收件地址与附件，并留意回复；后续材料和交流安排以导师邮件为准。</p>
       </section>
     </main>
   </div>
