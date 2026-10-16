@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="研究面向有严格截止时间的分布式任务，将节点选择与计算成本联合考虑，并通过组合优化和多臂老虎机方法应对节点性能差异与未知性。">
+  <meta name="robots" content="noindex, nofollow">
+  <title>在有限预算内，为编码计算选择更可靠的节点 - CoLD</title>
+  <link rel="icon" type="image/svg+xml" href="assets/cold-mark.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/news.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到正文</a>
+  <header class="topbar">
+    <a class="wordmark" href="main.htm" aria-label="CoLD — 分布式计算与系统研究所主页" title="Computing and Learning in Distributed Systems"><span class="wordmark-art"><img src="assets/cold-logo.png" alt="CoLD" width="2169" height="725"></span><span class="wordmark-sub" lang="en">Computing and Learning<br>in Distributed Systems</span></a>
+    <nav class="site-nav" aria-label="主导航"><a href="main.htm" aria-current="page"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m4 15 12-10 12 10M8 13v14h16V13M13 27v-8h6v8"/><circle class="icon-node" cx="16" cy="5" r="2"/></svg><span>主页</span></a>
+<a href="people.htm"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="9" r="3.5"/><circle cx="6" cy="14" r="2.5"/><circle cx="26" cy="14" r="2.5"/><path d="M10 28v-5a6 6 0 0 1 12 0v5M2 27v-4a4 4 0 0 1 5-4m23 8v-4a4 4 0 0 0-5-4"/><path class="icon-accent" d="M12 3h8"/></svg><span>成员</span></a>
+<a href="publications.htm"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 3h12l6 6v19H9ZM21 3v6h6M5 7v23h17M13 14h10m-10 5h10m-10 5h5"/><circle class="icon-node" cx="23" cy="24" r="1.7"/></svg><span>论著</span></a>
+<a href="applications.htm"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="5" width="26" height="23" rx="2"/><path d="M3 11h26M12 19h8"/><rect x="7" y="16" width="5" height="6" rx="1"/><rect x="20" y="16" width="5" height="6" rx="1"/><circle class="icon-node" cx="7" cy="8" r="1"/><circle class="icon-node" cx="11" cy="8" r="1"/></svg><span>应用</span></a>
+<a href="seminars.htm"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 4h22v16H5ZM16 20v7m-6 2 6-2 6 2"/><path class="icon-accent" d="m9 15 5-5 4 3 5-5"/><circle class="icon-node" cx="14" cy="10" r="1.6"/><circle class="icon-node" cx="23" cy="8" r="1.6"/></svg><span>研讨会</span></a>
+<a href="albums.htm"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="4" width="22" height="23" rx="2"/><path d="M3 9v21h21m-14-7 6-7 5 5 4-4 4 5"/><circle class="icon-accent" cx="22" cy="10" r="2.5"/><circle class="icon-node" cx="7" cy="4" r="1.7"/></svg><span>相册</span></a>
+<a href="contact.htm"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="7" width="26" height="20" rx="2"/><path d="m4 9 12 9L28 9M4 25l8-7m16 7-8-7"/><circle class="icon-node" cx="27" cy="6" r="2.5"/></svg><span>联系我们</span></a></nav>
+    <a class="university" href="https://www.hhu.edu.cn/" aria-label="河海大学官网"><span class="university-emblem" aria-hidden="true"><img src="assets/hohai-university-logo.png" alt="" width="1182" height="1182"></span><span class="university-name" aria-hidden="true"><img src="assets/hohai-university-logo.png" alt="" width="1182" height="1182"></span></a>
+  </header>
+  <div class="mobile-name"><img src="assets/institute-name-baoli.svg" alt="分布式计算与系统研究所" width="231" height="31"></div>
+  <div class="page-layout">
+    <aside class="sidebar">
+      <div class="vertical-name"><span>分</span><span>布</span><span>式</span><span>计</span><span>算</span><span>与</span><span>系</span><span>统</span><span>研</span><span>究</span><span>所</span></div>
+      <form class="page-search" role="search"><label for="search-input">本页查找</label><div class="search-controls"><input id="search-input" name="q" type="search" autocomplete="off" required><button type="submit" aria-label="查找"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m14.5 14.5 5 5"/></svg></button></div></form>
+      <p class="draft-note">网站预览版<br>内容完善中</p>
+    </aside>
+    <main id="main-content" class="main-content">
+      <div class="search-results" id="search-results" hidden><h2>查找结果 <button type="button" class="close-search">关闭</button></h2><p class="search-status" role="status"></p><ul class="search-result-list"></ul></div>
+
+      <nav class="breadcrumb" aria-label="当前位置"><a href="main.htm">主页</a> » <a href="main.htm#news">研究进展</a></nav>
+<article class="research-article">
+<h1>在有限预算内，为编码计算选择更可靠的节点</h1>
+<p class="article-meta">首次在线发表：2026-06-19　·　TC　·　CCF A 类</p>
+<div class="article-body">
+<p>分布式系统中的计算节点可能随机变慢，使有截止时间的任务无法及时完成。编码计算可以利用部分子任务结果恢复完整答案，但调用更多节点也意味着更高成本。唐斌、谢在鹏参与的研究关注如何在有限预算内降低任务失败概率。</p>
+<p>论文将这一问题形式化为受成本约束的节点选择，并证明其为 NP-hard 问题。研究利用中心极限定理近似失败概率，建立与二维背包问题的联系，设计相应算法及拉格朗日松弛启发式方法；在节点性能未知时，进一步引入多臂老虎机框架进行选择。</p>
+<p>论文通过仿真实验检验所提方案。该工作的意义在于将任务的及时完成与计算开销放在同一决策框架中，为异构系统中的资源选择提供可分析、可比较的方法，而不是单纯依赖增加计算冗余。</p>
+</div>
+<div class="news-paper">
+<h2>论文信息</h2>
+<p lang="en">Bin Tang, Yuxuan Lin, Siyuan Zhou, Zaipeng Xie, Baoliu Ye. <u>Cost-Constrained Node Selection for Timely Coded Computation Over Heterogeneous Systems</u>. <strong>IEEE Transactions on Computers</strong>, 2026.</p>
+<p>第一署名单位：河海大学<br>研究所作者：唐斌、谢在鹏</p>
+<p><a href="https://doi.org/10.1109/TC.2026.3705724">论文原文</a> · <a href="https://www.semanticscholar.org/paper/c168c89d3bb5d0d55f5edafc61e8317461850edd">公开摘要</a> · <a href="https://api.crossref.org/works/10.1109%2FTC.2026.3705724">单位署名依据</a> · <a href="https://openalex.org/W7165374158">日期来源</a></p>
+</div>
+<p class="news-note">本文依据公开论文摘要整理，介绍研究背景、方法与意义；具体实验条件和结论以论文原文为准。</p>
+<p class="archive-link">&#123;<a href="main.htm#news">返回研究进展</a>&#125;</p>
+</article>
+    </main>
+  </div>
+  <footer class="site-footer"><span>河海大学 · 计算机与软件学院</span><span><a href="contact.htm">联系研究所</a>：邮箱待补充</span><span>© 2026 分布式计算与系统研究所</span></footer>
+</body>
+</html>

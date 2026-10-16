@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="面对不同客户端图像风格的差异，研究将风格迁移、预测一致性与聚合权重优化结合起来，使联邦模型更好地适应未见过的数据域。">
+  <meta name="robots" content="noindex, nofollow">
+  <title>用图像风格迁移提升联邦学习的跨域泛化能力 - CoLD</title>
+  <link rel="icon" type="image/svg+xml" href="assets/cold-mark.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/news.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到正文</a>
+  <header class="topbar">
+    <a class="wordmark" href="main.htm" aria-label="CoLD — 分布式计算与系统研究所主页" title="Computing and Learning in Distributed Systems"><span class="wordmark-art"><img src="assets/cold-logo.png" alt="CoLD" width="2169" height="725"></span><span class="wordmark-sub" lang="en">Computing and Learning<br>in Distributed Systems</span></a>
+    <nav class="site-nav" aria-label="主导航"><a href="main.htm" aria-current="page"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m4 15 12-10 12 10M8 13v14h16V13M13 27v-8h6v8"/><circle class="icon-node" cx="16" cy="5" r="2"/></svg><span>主页</span></a>
+<a href="people.htm"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="9" r="3.5"/><circle cx="6" cy="14" r="2.5"/><circle cx="26" cy="14" r="2.5"/><path d="M10 28v-5a6 6 0 0 1 12 0v5M2 27v-4a4 4 0 0 1 5-4m23 8v-4a4 4 0 0 0-5-4"/><path class="icon-accent" d="M12 3h8"/></svg><span>成员</span></a>
+<a href="publications.htm"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 3h12l6 6v19H9ZM21 3v6h6M5 7v23h17M13 14h10m-10 5h10m-10 5h5"/><circle class="icon-node" cx="23" cy="24" r="1.7"/></svg><span>论著</span></a>
+<a href="applications.htm"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="5" width="26" height="23" rx="2"/><path d="M3 11h26M12 19h8"/><rect x="7" y="16" width="5" height="6" rx="1"/><rect x="20" y="16" width="5" height="6" rx="1"/><circle class="icon-node" cx="7" cy="8" r="1"/><circle class="icon-node" cx="11" cy="8" r="1"/></svg><span>应用</span></a>
+<a href="seminars.htm"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 4h22v16H5ZM16 20v7m-6 2 6-2 6 2"/><path class="icon-accent" d="m9 15 5-5 4 3 5-5"/><circle class="icon-node" cx="14" cy="10" r="1.6"/><circle class="icon-node" cx="23" cy="8" r="1.6"/></svg><span>研讨会</span></a>
+<a href="albums.htm"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="4" width="22" height="23" rx="2"/><path d="M3 9v21h21m-14-7 6-7 5 5 4-4 4 5"/><circle class="icon-accent" cx="22" cy="10" r="2.5"/><circle class="icon-node" cx="7" cy="4" r="1.7"/></svg><span>相册</span></a>
+<a href="contact.htm"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="7" width="26" height="20" rx="2"/><path d="m4 9 12 9L28 9M4 25l8-7m16 7-8-7"/><circle class="icon-node" cx="27" cy="6" r="2.5"/></svg><span>联系我们</span></a></nav>
+    <a class="university" href="https://www.hhu.edu.cn/" aria-label="河海大学官网"><span class="university-emblem" aria-hidden="true"><img src="assets/hohai-university-logo.png" alt="" width="1182" height="1182"></span><span class="university-name" aria-hidden="true"><img src="assets/hohai-university-logo.png" alt="" width="1182" height="1182"></span></a>
+  </header>
+  <div class="mobile-name"><img src="assets/institute-name-baoli.svg" alt="分布式计算与系统研究所" width="231" height="31"></div>
+  <div class="page-layout">
+    <aside class="sidebar">
+      <div class="vertical-name"><span>分</span><span>布</span><span>式</span><span>计</span><span>算</span><span>与</span><span>系</span><span>统</span><span>研</span><span>究</span><span>所</span></div>
+      <form class="page-search" role="search"><label for="search-input">本页查找</label><div class="search-controls"><input id="search-input" name="q" type="search" autocomplete="off" required><button type="submit" aria-label="查找"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m14.5 14.5 5 5"/></svg></button></div></form>
+      <p class="draft-note">网站预览版<br>内容完善中</p>
+    </aside>
+    <main id="main-content" class="main-content">
+      <div class="search-results" id="search-results" hidden><h2>查找结果 <button type="button" class="close-search">关闭</button></h2><p class="search-status" role="status"></p><ul class="search-result-list"></ul></div>
+
+      <nav class="breadcrumb" aria-label="当前位置"><a href="main.htm">主页</a> » <a href="main.htm#news">研究进展</a></nav>
+<article class="research-article">
+<h1>用图像风格迁移提升联邦学习的跨域泛化能力</h1>
+<p class="article-meta">PubMed 收录：2026-08-10（在线发表日期待核实）　·　TIP　·　CCF A 类</p>
+<div class="article-body">
+<p>联邦学习允许多个客户端在数据不集中汇总的情况下共同训练模型，但不同来源的图像往往具有不同风格。模型即使在参与训练的客户端上表现良好，遇到新的数据域时仍可能失效。陈思光参与的这项研究关注这一跨域泛化问题。</p>
+<p>研究利用图像风格迁移丰富客户端的本地数据，同时约束模型对原始图像及其风格变换版本给出一致预测。服务器再用无标签公开数据及其风格变换版本模拟未知域，根据客户端模型的泛化表现动态调整聚合权重。</p>
+<p>论文在 PACS 和 Office-Home 上报告了优于对比方法的平均测试准确率与更快收敛，并在 Camelyon17 肿瘤分类数据上进一步验证。这项工作为协同训练中如何同时处理本地过拟合和跨域模型聚合提供了思路。</p>
+</div>
+<div class="news-paper">
+<h2>论文信息</h2>
+<p lang="en">Qian Wang, Qun Li, Xue Li, Siguang Chen. <u>Image Style Transfer-Empowered Federated Domain Generalization</u>. <strong>IEEE Transactions on Image Processing</strong>, 2026.</p>
+<p>第一署名单位：河海大学<br>研究所作者：陈思光</p>
+<p><a href="https://doi.org/10.1109/TIP.2026.3720516">论文原文</a> · <a href="https://openalex.org/W7202112471">公开摘要</a> · <a href="https://api.crossref.org/works/10.1109%2FTIP.2026.3720516">单位署名依据</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42574399/">日期来源</a> · <a href="https://signalprocessingsociety.org/publications-resources/ieee-transactions-image-processing/2026/09/image-style-transfer-empowered-federated-domain-generalization">IEEE 学会介绍</a></p>
+</div>
+<p class="news-note">本文依据公开论文摘要整理，介绍研究背景、方法与意义；具体实验条件和结论以论文原文为准。</p>
+<p class="archive-link">&#123;<a href="main.htm#news">返回研究进展</a>&#125;</p>
+</article>
+    </main>
+  </div>
+  <footer class="site-footer"><span>河海大学 · 计算机与软件学院</span><span><a href="contact.htm">联系研究所</a>：邮箱待补充</span><span>© 2026 分布式计算与系统研究所</span></footer>
+</body>
+</html>

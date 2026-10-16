@@ -1,0 +1,24 @@
+/* Research news follows the site's compact academic typography. */
+.news-scope, .news-byline, .news-note { color: var(--muted); font-size: 13px; }
+.news-scope { margin: -3px 0 8px; }
+.research-news-list { list-style: none; margin: 0 0 15px; padding: 0; }
+.research-news-list li { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 14px; padding: 13px 0; border-bottom: 1px solid #e5eef4; }
+.research-news-list time { padding-top: 2px; color: var(--muted); font: 13px/1.7 Arial, sans-serif; font-variant-numeric: tabular-nums; }
+.research-news-list h3 { margin: 0 0 4px; font-size: 17px; line-height: 1.5; font-weight: 600; }
+.news-teaser { margin: 0 0 4px; font-size: 14px; line-height: 1.75; }
+.news-byline { margin: 0; font-size: 12px; }
+.news-note { line-height: 1.7; font-size: 12px; }
+.research-article { max-width: 1050px; }
+.research-article h1 { font-size: 24px; line-height: 1.55; }
+.research-article .article-body { margin: 24px 0 30px; line-height: 1.95; }
+.research-article .article-body p { margin-bottom: 18px; }
+.news-paper { padding: 16px 0 2px; border-top: 1px solid var(--rule); font-size: 14px; overflow-wrap: anywhere; }
+.news-paper h2 { font-size: 17px; border: 0; margin-bottom: 8px; }
+.news-paper h2::before { display: none; }
+@media (max-width: 620px) {
+  .research-news-list li { grid-template-columns: 1fr; gap: 2px; padding: 12px 0; }
+  .research-news-list time { font-size: 12px; padding: 0; }
+  .research-news-list h3 { font-size: 16px; }
+  .research-article h1 { font-size: 21px; }
+  .research-article .article-meta { line-height: 1.8; }
+}
