@@ -87,6 +87,7 @@ section { margin: 0 0 18px; scroll-margin-top: 12px; }
 .partner-imp { width: 360px; }
 .partner-tdh { width: 182px; }
 .partner-wus { width: 250px; }
+.partner-fnii { width: 331px; }
 /* Frame the original NARI brand artwork without redrawing the mark. */
 .partner-nari { position: relative; display: block; width: 140px; aspect-ratio: 228 / 136; overflow: hidden; }
 .partner-nari img { position: absolute; width: 526.3158%; max-width: none; left: -211.8421%; top: -101.4706%; }
