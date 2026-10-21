@@ -248,3 +248,23 @@ p.subtle { margin: 4px 0 8px; }
 .recruit-table td:last-child { white-space: nowrap; }
 .recruit-list { padding-left: 1.6em; margin: 0 0 16px; }
 .recruit-list li { margin-bottom: 8px; }
+
+/* Activity albums preserve the complete photograph, including portrait images. */
+.event-album-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 24px; max-width: 950px; }
+.event-album { margin: 0; max-width: 460px; }
+.event-album img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); padding: 4px; background: white; }
+.event-album figcaption { padding: 8px 0 16px; }
+.album-count { display: block; font-size: 13px; color: var(--muted); }
+.event-photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 24px; max-width: 1120px; align-items: start; }
+.event-photo { margin: 0; }
+.event-photo img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); padding: 4px; }
+.event-photo figcaption { text-align: center; font-size: 13px; color: var(--muted); padding: 5px; }
+.home-album-photo img { display: block; width: 100%; height: auto; }
+.home-section-visual.home-album-photo .section-image { height: auto; }
+.activity-links { list-style: none; padding: 0; margin: 0 0 18px; }
+.activity-links li { display: grid; grid-template-columns: 52px 1fr; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+.activity-links time { color: var(--muted); }
+@media (max-width: 640px) {
+  #team-activities .home-section-layout { grid-template-columns: 1fr; }
+  #team-activities .home-album-photo { max-width: 440px; }
+}
