@@ -268,3 +268,19 @@ p.subtle { margin: 4px 0 8px; }
   #team-activities .home-section-layout { grid-template-columns: 1fr; }
   #team-activities .home-album-photo { max-width: 440px; }
 }
+
+/* Seminar archive and report details. */
+.seminar-list { list-style: none; padding: 0; margin: 0 0 18px; }
+.seminar-list li { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 10px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.seminar-list time { color: var(--muted); font-size: 14px; }
+.seminar-list p { margin: 5px 0 0; }
+.seminar-detail { max-width: 1120px; }
+.seminar-meta { display: grid; grid-template-columns: 70px minmax(0, 1fr); gap: 8px 12px; margin: 24px 0; }
+.seminar-meta dt { color: var(--muted); }
+.seminar-meta dd { margin: 0; }
+.seminar-detail > p { line-height: 1.9; }
+@media (max-width: 640px) {
+  .seminar-list li { grid-template-columns: 1fr; gap: 3px; }
+  #seminar-highlights .home-section-layout { grid-template-columns: 1fr; }
+  #seminar-highlights .home-album-photo { max-width: 440px; }
+}
