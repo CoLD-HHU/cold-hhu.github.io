@@ -284,3 +284,6 @@ p.subtle { margin: 4px 0 8px; }
   #seminar-highlights .home-section-layout { grid-template-columns: 1fr; }
   #seminar-highlights .home-album-photo { max-width: 440px; }
 }
+
+/* Institute group illustration retains its full composition. */
+.institute-group-photo img { display: block; width: 100%; height: auto; }
