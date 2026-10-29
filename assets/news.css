@@ -53,3 +53,59 @@
   .research-article h1 { font-size: 21px; }
   .research-article .article-meta { line-height: 1.8; }
 }
+
+/* One typography scale for the three homepage lists. */
+.home-section-content :is(.research-news-list, .seminar-list, .activity-links) {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.home-section-content :is(.research-news-list, .seminar-list, .activity-links) > li {
+  display: grid;
+  grid-template-columns: 85px minmax(0, 1fr);
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.home-section-content :is(.research-news-list, .seminar-list, .activity-links) time {
+  padding-top: 2px;
+  color: var(--muted);
+  font: 400 13px/1.6 Arial, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+.home-section-content .research-news-list h3 {
+  margin: 0;
+  font: inherit;
+}
+.home-section-content :is(.research-news-list h3, .seminar-list li > div, .activity-links li) > a {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.home-section-content :is(.news-teaser, .seminar-list p) {
+  margin: 6px 0 0;
+  font-size: 14px;
+  line-height: 1.75;
+}
+.home-section-content .news-byline {
+  margin: 6px 0 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+@media (max-width: 900px) {
+  .home-section-content :is(.research-news-list, .seminar-list, .activity-links) > li {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .home-section-content :is(.research-news-list, .seminar-list, .activity-links) time {
+    padding-top: 0;
+  }
+}
+@media (max-width: 640px) {
+  .home-section-layout { grid-template-columns: 1fr; gap: 16px; }
+  .home-section-visual { width: 100%; max-width: 440px; }
+  .home-section-visual figcaption { font-size: 13px; }
+  .paper-visual .section-image { height: auto; }
+  .paper-visual img { height: auto; }
+}
