@@ -287,3 +287,9 @@ p.subtle { margin: 4px 0 8px; }
 
 /* Institute group illustration retains its full composition. */
 .institute-group-photo img { display: block; width: 100%; height: auto; }
+
+/* WebPlus article wrappers use the same link colors as the homepage. */
+.main-content .wp_entry a,
+.main-content .wp_articlecontent a { color: var(--link); }
+.main-content .wp_entry a:hover,
+.main-content .wp_articlecontent a:hover { color: var(--heading); text-decoration: underline; }
